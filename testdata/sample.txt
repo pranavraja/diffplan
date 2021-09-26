@@ -1,0 +1,4 @@
+id=i-abcd1234 name=worker1 state=running
+id=i-lkjh4321 name=worker2 state=running
+id=i-poiu5678 name=testinstancecostingmemoney state=running
+id=i-qwer8765 name=anothertestiforgotabout state=running
