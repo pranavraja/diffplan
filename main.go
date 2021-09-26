@@ -73,13 +73,13 @@ func main() {
 		}
 	}
 	if len(creates) > 0 {
-		fmt.Println(color(fmt.Sprintf("will CREATE:\n%s", creates), Green))
+		fmt.Println(color(fmt.Sprintf("will CREATE:\n%s", creates.String(verbose)), Green))
 	}
 	if len(updates) > 0 {
-		fmt.Println(color(fmt.Sprintf("will UPDATE:\n%s", updates), Cyan))
+		fmt.Println(color(fmt.Sprintf("will UPDATE:\n%s", updates.String(verbose)), Cyan))
 	}
 	if len(deletes) > 0 {
-		fmt.Println(color(fmt.Sprintf("will DELETE:\n%s", deletes), Red))
+		fmt.Println(color(fmt.Sprintf("will DELETE:\n%s", deletes.String(verbose)), Red))
 	}
 
 	// Allow the user to back out at this point,

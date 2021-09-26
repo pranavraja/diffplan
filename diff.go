@@ -46,11 +46,11 @@ func (p Plan) String() string {
 
 type Plans []Plan
 
-func (plans Plans) String() string {
+func (plans Plans) String(verbose bool) string {
 	w := new(strings.Builder)
 	for i, p := range plans {
 		fmt.Fprintf(w, " - %s\n", p)
-		if i >= 9 {
+		if i >= 9 && !verbose {
 			fmt.Fprintf(w, " ...and %d more\n", len(plans)-i)
 			break
 		}
